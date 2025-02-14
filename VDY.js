@@ -21,6 +21,14 @@ function validarApodo() {
     }
 }
 
+function lanzarConfeti() {
+    confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+    });
+}
+
 function validarBeso() {
     const primerBeso = document.getElementById("primerBeso").value;
     const besoCorrecto = "2024-06-01";
@@ -28,10 +36,16 @@ function validarBeso() {
         document.getElementById("pregunta3").classList.add("hidden");
         document.getElementById("mensaje").classList.remove("hidden");
         document.getElementById("carta").classList.remove("hidden");
+    
+    lanzarConfeti();
+
     } else {
         alert("Intenta de nuevo, mi amor");
     }
+    
 }
+
+
 
 function actualizarCuentaRegresiva() {
     const fechaAniversario = new Date("2025-02-18").getTime();
@@ -52,6 +66,11 @@ function actualizarCuentaRegresiva() {
         return;
     }
     
+}
+actualizarCuentaRegresiva();
+
+function playAudio() {
+    document.getElementById("musicPlayer").play();
 }
 actualizarCuentaRegresiva();
 
