@@ -40,7 +40,11 @@ img {
     margin-bottom: 10px;
     border-radius: 10px;
 }
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+#carta {
+    animation: fadeInUp 1.5s ease-in-out;
 }
