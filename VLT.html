@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín - Para Mi Amor</title>
+    <link rel="stylesheet" href="VLT2.css">
+</head>
+<body>
+    <audio id="musicPlayer" controls>
+        <source src="luna-zoe.mp3" type="audio/mp3">
+        Tu navegador no soporta audio.
+    </audio>
+    <button onclick="playAudio()">🎵 Reproducir Música</button>
+    <div class="container">
+        <h2> Feliz primer San Valentín mi amorcito</h2>
+        <img src="heart.png" alt="Corazón">
+        
+        <div id="pregunta1">
+            <p>Ingresa la fecha de inicio de nuestra relación:</p>
+            <input type="date" id="fechaInicio"><br><br>
+            <button onclick="validarFecha()">Verificar</button>
+        </div>
+        
+        <div id="pregunta2" class="hidden">
+            <p>¿Cuál es tu apodo de cariño?</p>
+            <input type="text" id="apodo" placeholder="Ej: Amorcito"><br><br>
+            <button onclick="validarApodo()">Verificar</button>
+        </div>
+        
+        <div id="pregunta3" class="hidden">
+            <p>¿Cuándo nos dimos el primer beso?</p>
+            <input type="date" id="primerBeso"><br><br>
+            <button onclick="validarBeso()">Verificar</button>
+        </div>
+        
+        <p id="mensaje" class="hidden">Felicidades amorcito bello 💖</p>
+        
+        <div id="carta" class="hidden">
+            <h3>Mi amor,</h3>
+            <p id="mensajeCarta">Feliz primer San Valentin, mi pollito precioso te adoro 💖 no pensé un día tener en mi vida a una persona tan linda como tú. Te amo mucho mi amor y espero poder seguir disfrutando mi vida a tu lado .</p>
+        </div>
+        
+        <h3>Galería de Recuerdos</h3>
+        <div id="galeria">
+            <img src="foto1.jpeg" alt="Foto de pareja">
+            <img src="foto2.jpeg" alt="Foto de pareja">
+            <img src="foto3.jpeg" alt="Foto de pareja">
+        </div>
+        
+        <h3>Cuenta regresiva para nuestro 4to aniversario</h3>
+        <p id="countdown"></p>
+    </div>
+    
+    <script src="VDY.js"></script>
+</body>
+</html>

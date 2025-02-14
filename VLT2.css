@@ -1,0 +1,46 @@
+/* VLT2.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+body {
+    font-family: 'Dancing Script', cursive;
+    background:  #ffb6c1;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    color: black;
+    animation: fadeIn 2s ease-in-out;
+}
+.hidden {
+    display: none;
+}
+button {
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #c9184a;
+}
+img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
