@@ -64,9 +64,7 @@ function actualizarCuentaRegresiva() {
     if (diferencia < 0) {
         document.getElementById("countdown").innerHTML = "¡Feliz aniversario, amor! 🎉💖";
         return;
-    }
-    
-}
+    }}
 actualizarCuentaRegresiva();
 
 function playAudio() {
