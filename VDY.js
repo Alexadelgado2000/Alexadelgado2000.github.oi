@@ -46,6 +46,12 @@ function actualizarCuentaRegresiva() {
         
         document.getElementById("countdown").innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
     }, 1000);
+
+    if (diferencia < 0) {
+        document.getElementById("countdown").innerHTML = "¡Feliz aniversario, amor! 🎉💖";
+        return;
+    }
+    
 }
 actualizarCuentaRegresiva();
 
